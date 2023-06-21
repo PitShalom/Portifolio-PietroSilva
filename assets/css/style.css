@@ -10,14 +10,14 @@
 
 :root {
   --hue: 90;
-  --primary-color: hsl(var(--hue), 92%, 43%);
+  --primary-color:#eb0c0c;
   --primary-hover: hsl(var(--hue), 92%, 33%);
-  --secundary-color: hsl(0, 0%, 5%);
+  --secundary-color: hsl(0, 0%, 100%);
   --third-color: hsla(0, 0%, 100%, 0.1);
-  --bg-color: hsl(0, 0%, 8%);
+  --bg-color: hsl(0, 2%, 80%);
 
-  --headline: hsl(0, 0%, 100%);
-  --paragraph: hsla(0, 0%, 100%, 0.658);
+  --headline: hsl(0, 0%, 5%);
+  --paragraph: headline: hsl(0, 0%, 10%);
   --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
 
   font-size: 62.5%;
@@ -481,6 +481,7 @@ body.menu-expanded button path {
 
   animation: flutuar 3s infinite backwards;
   position: relative;
+  
 }
 
 @keyframes flutuar {
@@ -553,7 +554,9 @@ body.light-mode #home img#notebook-2-white {
   z-index: 100;
   right: -2rem;
   animation: appear-vidro 1s 2.3s backwards;
-
+  width: 50%;
+  margin-right:60%;
+  margin-top:-13%;
   filter: contrast(5);
 }
 
@@ -576,6 +579,9 @@ body.light-mode #home img#notebook-2-white {
     opacity: 1;
   }
 }
+
+
+
 
 /*===== ABOUT =================================================*/
 
@@ -1330,6 +1336,11 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
+  }
+
+  #projects .cards .card img {
+    width: 100%; /* Defina o tamanho desejado para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
   }
 
   #projects h3 {

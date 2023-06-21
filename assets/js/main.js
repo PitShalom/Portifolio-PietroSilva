@@ -1,11 +1,11 @@
 import { desafios } from "./desafios.js";
 import { projetos } from "./projetos.js";
 
+
 const navigation = document.querySelector("#navigation");
 const backToTopButton = document.querySelector("#backToTopButton");
 const toggle = document.querySelector("#sw-checkbox");
 const projectsSection = document.querySelector("#projects .wrapper");
-
 const notebook_1 = document.querySelector("#notebook-1");
 const notebook_2 = document.querySelector("#notebook-2");
 const notebook_2_white = document.querySelector("#notebook-2-white");
@@ -23,6 +23,7 @@ window.addEventListener("load", function begin() {
   });
 });
 
+
 window.addEventListener("scroll", onScroll);
 onScroll();
 
@@ -35,6 +36,29 @@ window.onload = setTimeout(() => {
   vidro.style.animation = "none";
 }, 4000);
 
+
+
+
+var imagens = document.querySelectorAll('.imagem-animada');
+var indexAtual = 0;
+
+// Função para alternar a exibição das imagens
+function alternarImagem() {
+    imagens.forEach(function(imagem, index) {
+        if (index === indexAtual) {
+            imagem.style.opacity = '1';
+        } else {
+            imagem.style.opacity = '0';
+        }
+    });
+
+    indexAtual = (indexAtual + 1) % imagens.length;
+
+    setTimeout(alternarImagem, 3000); // Tempo em milissegundos para cada imagem ficar visível
+}
+
+// Iniciar a animação
+alternarImagem();
 function onScroll() {
   showNavOnScroll();
   showBackToTopButtonOnScroll();
@@ -44,6 +68,7 @@ function onScroll() {
   activateMenuAtCurrentSection(knowledge);
   activateMenuAtCurrentSection(contact);
 }
+
 
 function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2;
@@ -127,3 +152,4 @@ ScrollReveal({
 toggle.addEventListener("change", () => {
   document.body.classList.toggle("light-mode");
 });
+

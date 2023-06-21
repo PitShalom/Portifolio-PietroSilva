@@ -7,10 +7,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Portifólio de Lucyan Ovídio, desenvolvedor web Front-end" />
-    <meta name="author" content="Lucyan Ovídio" />
-    <meta property="og:description" content="Portifólio de Lucyan Ovídio, desenvolvedor web Front-end" />
-    <meta property="og:image" content="./assets/images/imagem-de-lucyan-vestindo-camisa-social-branca-e-sorrindo-com-plantas-no-fundo.png" />
+    <meta name="description" content="Portifólio de Pietro Silva, desenvolvedor Full-Stack" />
+    <meta name="author" content="Pietro Silva" />
+    <meta property="og:description" content="Portifólio de Pietro Silva, desenvolvedor web Front-end" />
     <meta property="og:type" content="website" />
     <meta name="keywords" content="developer, programação, dev, desenvolvedor, programador, html, css, javascript, nodejs, reactjs, react, github, frontend, front-end" />
     <meta name="robots" content="index" />
@@ -26,15 +25,16 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script> 
     <script type="module" src="./assets/js/main.js" defer></script>
-
-    <title>Lucyan // Portifólio</title>
+    <script type="module" src="./assets/js/convertToPDF.js" defer></script>
+    <script src="./assets/js/jspdf.min.js"></script>
+    <title>Pietro - Portifólio</title>
   </head>
   <body>
     <nav id="navigation">
       <div class="wrapper">
-        <a class="logo close" href="#home"> lucyanovidio </a>
+        <a class="logo close" href="#home">CodePietro</a>
 
         <div class="menu">
           <ul>
@@ -57,7 +57,7 @@
           <ul class="social-links">
             <li>
               <a
-                href="https://instagram.com/lucyanovidio"
+                href="https://instagram.com/pit_silvaa9"
                 title="Instagram"
                 target="_blank"
                 ><svg
@@ -93,7 +93,7 @@
             </li>
             <li>
               <a
-                href="https://github.com/lucyanovidio"
+                href="https://github.com/PitShalom"
                 title="Github"
                 target="_blank"
                 ><svg
@@ -112,7 +112,7 @@
             </li>
             <li>
               <a
-                href="https://linkedin.com/in/lucyanovidio"
+                href="https://www.linkedin.com/in/pietro-alvino-31a1161a2/"
                 title="LinkedIn"
                 target="_blank"
                 ><svg
@@ -124,25 +124,6 @@
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path
                     d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
-                    fill="rgba(255,255,255,1)"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/lucyanovidio"
-                title="Twitter"
-                target="_blank"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
                     fill="rgba(255,255,255,1)"
                   />
                 </svg>
@@ -216,10 +197,10 @@
         <div class="col-a">
           <header>
             <h4>Hello world 👋🏾</h4>
-            <h1>Eu sou Lucyan,</h1>
+            <h1>Meu nome é Pietro,</h1>
           </header>
           <div class="content">
-            <p class="line typing">Desenvolvedor Web Front-end.</p>
+            <p class="line typing">Desenvolvedor Full-Stack</p>
             <a class="button" href="#contact"> Fale comigo </a>
           </div>
         </div>
@@ -241,8 +222,8 @@
             id="notebook-2-white"
           />
           <img
-            src="./assets/images/vidro.png"
-            alt="Imagem de estilhaços de vidro com os ícones de HTML5, CSS3 e JavaScript por cima."
+            src="./assets/images/iconLenguages.png"
+            alt="Imagem de ícones de HTML5, CSS3 e JavaScript,ColdFusion,python e React por cima."
             id="vidro"
           />
         </div>
@@ -257,20 +238,25 @@
           </header>
           <div class="content">
             <p>
-              Me chamo Lucyan Ovídio, graduando no curso de Sistemas de
-              Informação pela UFRRJ e desenvolvedor web Front-end. Desenvolvo páginas e sistemas web responsívos e de layout atrativo. Tenho uma trajetória de cerca de 4 anos
-              trabalhando com suporte técnico e manutenção de computadores, o
-              que me tornou um profissional dedicado e organizado. Hoje na área de desenvolvimento vivo o aprendizado continuo, focando em tecnologias JavaScript. Busco oportunidades no mercado como dev e, em um futuro próximo, viso me tornar um desenvolvedor Full Stack.
-            </p>
+              <script src="convertToPDF.js"></script>
+              Olá! Eu tenho 17 anos e estou cursando o ultimo ano do ensino médio técnico em Informática para Internet. Desde criança, sou completamente apaixonado por tecnologia, é algo que me fascina de verdade. Todos os dias, dedico meu tempo livre para estudar e aprender coisas novas nessa área incrível.
+
+              Uma das coisas que mais me empolga é programação. Tenho experiência em algumas linguagens, como Python, ColdFusion e JavaScript. Já trabalhei em projetos e consegui colocar em prática o que aprendi até agora. Cada linha de código escrita me motiva ainda mais a explorar e aprender sobre essa área fascinante.
+
+              Enfim, esse sou eu!
+             
           </div>
         </div>
+        
 
         <div class="col-b">
           <img
-            src="./assets/images/imagem-de-lucyan-vestindo-camisa-social-branca-e-sorrindo-com-plantas-no-fundo.png"
-            alt="Imagem de Lucyan vestindo camisa social branca e sorrindo com plantas no fundo"
+            src="./assets/images/EUPORTFOLIO.jpg"
+            alt="Imagem"
           />
         </div>
+        
+
       </div>
     </section>
 
@@ -286,31 +272,51 @@
         <div class="content">
           <div class="cards">
             <div class="card">
-              <img src="./assets/images/html.png" alt="Ícone do HTML5." />
-
-              <h3>HTML5</h3>
+              <img src="./assets/images/cfmIcon-removebg-preview.png" alt="Ícone do HTML5." style="width: 75% "/>
+              <h3>Cold Fusion</h3>
               <p>
-                HTML5 é uma linguagem de marcação de hipertexto, que usamos para
-                marcar os elementos da página e construí-la.
+                ColdFusion é uma plataforma de desenvolvimento web da Adobe que combina uma linguagem de programação fácil de usar e um servidor web poderoso. Com recursos avançados para manipulação de dados, integração de bancos de dados e envio de e-mails, o ColdFusion permite a criação rápida de aplicativos web dinâmicos e ricos em recursos. É conhecido por sua escalabilidade, desempenho e capacidade de integração com outras tecnologias.
               </p>
             </div>
             <div class="card">
-              <img src="./assets/images/css.png" alt="Ícone do CSS3." />
-
-              <h3>CSS3</h3>
+              <img src="./assets/images/Python-Transparent-Background-removebg-preview.png" alt="Ícone do CSS3." style="width: 100%;padding-top: 22%;"/>
+              
+              <h3>Python</h3>
               <p>
-                CSS3 é uma linguagem de estilo usada para descrever a
-                apresentação dos elementos da página os estilizando.
+                
+                Python é uma linguagem de programação de alto nível, conhecida por sua sintaxe simples e legível. É amplamente utilizada em diversos domínios, como desenvolvimento web, análise de dados, automação, inteligência artificial e mais. Sua vasta biblioteca e comunidade ativa tornam Python uma escolha popular entre os desenvolvedores, oferecendo facilidade de uso, produtividade e versatilidade.
               </p>
             </div>
             <div class="card">
-              <img src="./assets/images/js.png" alt="Ícone do Javascript." />
+              <img src="./assets/images/js.png" alt="Ícone do Javascript."style="padding-top: 22%;padding-right:5%" />
 
               <h3>JavaScript</h3>
               <p>
-                JavaScript é uma linguagem de programação interpretada usada no
-                desenvolvimento web para descrever funcionalidades e
-                comportamentos da página.
+                JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web. Ela permite adicionar interatividade e dinamismo às páginas da web, manipular elementos HTML, realizar requisições de rede, criar animações, desenvolver aplicações web completas e muito mais. Com uma sintaxe fácil de aprender e suporte em todos os navegadores modernos, o JavaScript é uma escolha poderosa e versátil para desenvolver funcionalidades avançadas no lado do cliente e no lado do servidor.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./assets/images/java-removebg-preview.png" alt="Ícone do HTML5." style="width: 75%;"/>
+
+              <h3>Java</h3>
+              <p>  
+                Java é uma linguagem de programação popular e versátil, usada para desenvolver uma ampla variedade de aplicativos, desde aplicativos móveis e web até sistemas empresariais. Com sua abordagem orientada a objetos, Java oferece segurança, portabilidade e desempenho confiável. Ele é conhecido por sua sintaxe limpa, ampla comunidade e extensa biblioteca padrão. Java é usado em várias áreas, incluindo desenvolvimento Android, aplicativos de desktop, servidores web e muito mais.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./assets/images/git-removebg-preview.png" alt="Ícone do HTML5." style="width: 50%;"/>
+
+              <h3>HTML</h3>
+              <p>
+                HTML (HyperText Markup Language) é uma linguagem de marcação usada para estruturar e exibir conteúdo na web. Composto por elementos e tags, o HTML permite criar páginas web com texto, imagens, links e outros elementos interativos. Ele fornece uma estrutura básica para o desenvolvimento de páginas, definindo a hierarquia e organização do conteúdo. Combinado com CSS e JavaScript, o HTML possibilita a criação de sites interativos e responsivos, tornando-se a base fundamental para a construção da maioria das páginas da web.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./assets/images/png-transparent-mysql-php-database-javascript-ajax-carnifex-blue-text-logo-removebg-preview.png" alt="Ícone do HTML5." style="width: 50%;"/>
+
+              <h3>CSS</h3>
+              <p>      
+                CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para estilizar e formatar páginas web. Com o CSS, é possível definir cores, fontes, espaçamento, layout e outros aspectos visuais de elementos HTML. Ele permite separar o conteúdo da apresentação, facilitando a manutenção e a consistência visual do site. Utilizando seletores e propriedades, o CSS possibilita personalizar o design e a aparência de uma página, tornando-a atraente e vFisualmente agradável para os usuários.
               </p>
             </div>
           </div>
@@ -327,7 +333,7 @@
           <div class="content">
             <ul>
               <li>
-                <a href="mailto: lucyanovidio@gmail.com" title="Enviar e-mail">
+                <a href="mailto: pietro.alvinos@gmail.com" title="Enviar e-mail">
                   <svg
                     width="24"
                     height="24"
@@ -351,7 +357,7 @@
                     />
                   </svg>
 
-                  lucyanovidio@gmail.com
+                  pietro.alvinos@gmail.com
                 </a>
               </li>
               <li>
@@ -361,7 +367,7 @@
                     alt="Ícone de celular."
                     id="cel"
                   />
-                  +55 21 97160-2369</a
+                  +55 11 97198 0789</a
                 >
               </li>
             </ul>
@@ -369,7 +375,7 @@
             <a
               class="button"
               title="Me chama no zap!"
-              href="https://api.whatsapp.com/send?phone=5521971602369&text=Fala,%20Lucyan!%20Vim%20do%20teu%20portifólio,%20quero%20trabalhar%20contigo!"
+              href="https://api.whatsapp.com/send?phone=5511971980789&text=Fala,%20Pietro!%20Vim%20do%20teu%20portifólio,%20quero%20trabalhar%20contigo!"
               target="_blank"
             >
               <svg
@@ -424,11 +430,10 @@
     <footer>
       <div class="wrapper">
         <div class="col-a">
-          <a class="logo" href="#home"> lucyanovidio </a>
+          <a class="logo" href="#home"> CodePietro </a>
 
           <p>
-            ©2022 por Lucyan Ovídio. <br />
-            Todos os direitos reservados.
+            ©2023 por Pietro Silva. <br />
           </p>
         </div>
 
@@ -436,7 +441,7 @@
           <ul class="social-links">
             <li>
               <a
-                href="https://instagram.com/lucyanovidio"
+                href="https://instagram.com/pit_silvaa9"
                 title="Instagram"
                 target="_blank"
                 ><svg
@@ -472,7 +477,7 @@
             </li>
             <li>
               <a
-                href="https://github.com/lucyanovidio"
+                href="https://github.com/PitShalom"
                 title="Github"
                 target="_blank"
                 ><svg
@@ -491,7 +496,7 @@
             </li>
             <li>
               <a
-                href="https://linkedin.com/in/lucyanovidio"
+                href="https://www.linkedin.com/in/pietro-alvino-31a1161a2/"
                 title="LinkedIn"
                 target="_blank"
                 ><svg
@@ -508,57 +513,11 @@
                 </svg>
               </a>
             </li>
-            <li>
-              <a
-                href="https://twitter.com/lucyanovidio"
-                title="Twitter"
-                target="_blank"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
-                    fill="rgba(255,255,255,1)"
-                  />
-                </svg>
-              </a>
-            </li>
           </ul>
         </div>
       </div>
     </footer>
 
-    <div id="toggle">
-      <input type="checkbox" id="sw-checkbox" />
-      <label for="sw-checkbox" title="Mudar tema">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="20"
-          height="20"
-        >
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path
-            d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="20"
-          height="20"
-        >
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path
-            d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"
-            fill="rgba(255,255,255,1)"
-          />
-        </svg>
-      </label>
-    </div>
+    
   </body>
 </html>
